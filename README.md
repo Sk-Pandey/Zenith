@@ -1,4 +1,4 @@
-# ✦ Zenith
+<img width="677" height="694" alt="image" src="https://github.com/user-attachments/assets/60191db1-516a-4455-ab09-15757f232896" /># ✦ Zenith
 
 Zenith is a simple and modern task management application built with React. It helps users organize their daily tasks, track progress, and stay focused on what needs to be completed.
 
@@ -40,7 +40,7 @@ src/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/zenith.git
+git clone https://github.com/Sk-Pandey/zenith.git
 ```
 
 ### Navigate to the project folder
@@ -85,15 +85,20 @@ While building this project, I practiced:
 
 ## Screenshots
 
-Add screenshots of the application here.
+<img width="677" height="694" alt="image" src="https://github.com/user-attachments/assets/85fe6dd7-0979-4648-b2d7-3294759303d4" />
+<img width="628" height="801" alt="image" src="https://github.com/user-attachments/assets/b08d8ebf-1ed6-4dc9-a9d2-d7269ec141f3" />
+<img width="602" height="793" alt="image" src="https://github.com/user-attachments/assets/a2c535d3-10ea-4087-a7fb-f2c4c23fb9cd" />
+
+
+
 
 ## Live Demo
 
-Live Site: [Add deployed link here]
+Live Site: https://sk-pandey.github.io/Zenith/
 
 ## Author
 
-Built by [Your Name]
+Built by Shashikant Pandey
 
 ## License
 
