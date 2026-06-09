@@ -32,18 +32,17 @@ const Tasks = ({
   }
 
   return (
-    <div className="max-h-72 overflow-y-auto flex flex-col gap-2.5 pr-1 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
+    <div className="max-h-[55vh] sm:max-h-72 overflow-y-auto flex flex-col gap-2.5 pr-1 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
       {filtered.map((task) => (
         <div
           key={task.id}
-          className={`group flex items-center justify-between gap-3 rounded-xl px-4 py-3 border transition-all duration-300 ${
+          className={`group flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-xl px-4 py-3 border transition-all duration-300 ${
             task.done
               ? "bg-[#141418] border-white/[0.03]"
               : "bg-[#1a1a24] border-white/[0.06] hover:border-violet-500/30"
           }`}
         >
-          {/* Checkbox + label */}
-          <div className="flex items-center gap-3 min-w-0">
+          <div className="flex items-center gap-3 min-w-0 flex-1">
             <button
               onClick={() => toggleDone(task.id)}
               className={`shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
@@ -51,7 +50,6 @@ const Tasks = ({
                   ? "bg-gradient-to-br from-violet-500 to-fuchsia-500 border-transparent shadow-md shadow-violet-900/40"
                   : "border-slate-600 hover:border-violet-400"
               }`}
-              aria-label={task.done ? "Mark incomplete" : "Mark complete"}
             >
               {task.done && (
                 <svg
@@ -69,7 +67,7 @@ const Tasks = ({
             </button>
 
             <span
-              className={`text-sm leading-snug truncate transition-all duration-300 ${
+              className={`text-sm leading-snug break-words transition-all duration-300 ${
                 task.done ? "line-through text-slate-600" : "text-slate-200"
               }`}
             >
@@ -77,8 +75,7 @@ const Tasks = ({
             </span>
           </div>
 
-          {/* Actions */}
-          <div className="flex items-center gap-1.5 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="flex flex-wrap items-center gap-1.5 w-full sm:w-auto justify-end shrink-0 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-200">
             {!task.done && (
               <button
                 onClick={() => edit(task)}
@@ -87,6 +84,7 @@ const Tasks = ({
                 Edit
               </button>
             )}
+
             <button
               onClick={() => deleteTask(task.id)}
               className="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-slate-800 text-slate-400 hover:bg-rose-600/80 hover:text-white transition-all"
