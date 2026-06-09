@@ -1,4 +1,4 @@
-<img width="677" height="694" alt="image" src="https://github.com/user-attachments/assets/60191db1-516a-4455-ab09-15757f232896" /># ✦ Zenith
+# ✦ Zenith
 
 Zenith is a simple and modern task management application built with React. It helps users organize their daily tasks, track progress, and stay focused on what needs to be completed.
 
