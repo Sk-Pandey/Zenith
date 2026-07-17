@@ -1,5 +1,5 @@
 # ✦ Zenith
- 
+
 A modern and minimal task management application built with React.
 
 Zenith helps users organize tasks, track progress, and stay focused through a clean and intuitive interface. This project was created to practice React fundamentals, state management, component-based architecture, and modern UI design.
