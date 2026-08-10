@@ -9,7 +9,7 @@ Zenith helps users organize tasks, track progress, and stay focused through a cl
 https://sk-pandey.github.io/Zenith/
 
 ## ✨ Features
-       
+
 - Add new tasks
 - Edit existing tasks
 - Delete tasks
